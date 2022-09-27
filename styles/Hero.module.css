@@ -17,14 +17,20 @@
 
 .herocontent{
     display: flex;
-    padding: 140px 100px 90px;
+    
     height: 500px;
     flex-direction: column;
     align-items: left;
-    justify-content: left;
+    justify-content: center;
     position: relative;
     background-color: transparent;
 }
+.container_page {
+    max-width: 1440px;
+    width: 100%;
+   
+    padding: 86px 86px;
+  }
 
 .herocontent h2{
     font-size: 45px;
@@ -39,3 +45,16 @@
     width: 600px;
     margin: 0;
 }
+
+@media  (max-width: 1366px) {
+    .container_page{
+      padding: 0 43px;
+  
+    }
+  }
+  @media  (max-width: 1007px) {
+    .container_page{
+      padding: 0 22px;
+  
+    }
+  }
