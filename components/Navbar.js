@@ -26,7 +26,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/">
-                <a>Ma'lumotlar</a>
+                <a>Ma&apos;lumotlar</a>
               </Link>
             </li>
             <li>
