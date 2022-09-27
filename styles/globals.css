@@ -14,8 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 86px;
+}
 
-@media (prefers-color-scheme: dark) {
+@media  (max-width: 1366px) {
+  .container{
+    padding: 0 43px;
+
+  }
+}
+@media  (max-width: 1007px) {
+  .container{
+    padding: 0 22px;
+
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +42,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

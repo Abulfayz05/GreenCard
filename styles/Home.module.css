@@ -1,7 +1,7 @@
-.container {
-  padding: 0 2rem;
+.container{
+  position: relative;
+  margin-top: 500px;
 }
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -12,21 +12,11 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.main h1{
+  font-size: 48px;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+
 
 .title a {
   color: #0070f3;
@@ -83,7 +73,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 800px;
-  width: 100%;
+
 }
 
 .card:hover,
