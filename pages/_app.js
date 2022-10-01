@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
+import Gtag from "../components/gtag";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="icon" href="/logo.png" />
       </Head>
+      <Gtag />
       <Component {...pageProps} />
     </Layout>
   );

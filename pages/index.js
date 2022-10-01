@@ -6,15 +6,13 @@ import Main from "../components/Main";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Green Card DV2024 uchun anketalar qabul qilamiz</title>
         <meta name="description" content="Green Card ro'yxatdan o'tish 2024" />
-      
-        <link rel="icon" href="/logo.png" />
       </Head>
       <Hero />
-      <Main/>
+      <Main />
     </div>
   );
 }
