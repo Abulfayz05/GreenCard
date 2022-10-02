@@ -20,7 +20,7 @@
 }
 .news h3 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 120%;
     color: #12273C;
     margin: 10px 0;
@@ -53,7 +53,7 @@
 
 .desc {
     margin-top: 20px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.6;
     color: #333333;

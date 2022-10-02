@@ -11,22 +11,22 @@ const News = ({ data }) => {
   return (
     <>
       <NextSeo
-        title={dataFilter.news_title}
-        description={dataFilter.news_content.split(" ", 20).join(" ")}
-        titleTemplate={dataFilter.news_title}
+        title={dataFilter.meta_name}
+        description={dataFilter.content.split(" ", 20).join(" ")}
+        // titleTemplate={dataFilter.title}
       />
       <div className={styles.news}>
-        <h3>{dataFilter.news_title}</h3>
+        <h3>{dataFilter.title}</h3>
 
         <p className={styles.date}>
-          {dataFilter.data_created.slice(0, 10) +
+          {dataFilter.date.slice(0, 10) +
             " " +
-            dataFilter.data_created.slice(11, 16)}
+            dataFilter.date.slice(11, 16)}
         </p>
 
         <div className={styles.image}>
           <Image
-            src={getAssetURL(dataFilter.news_image)}
+            src={getAssetURL(dataFilter.image)}
             layout="responsive"
             width={600}
             height={400}
@@ -35,7 +35,7 @@ const News = ({ data }) => {
         </div>
 
         <div className={styles.desc}>
-          <p dangerouslySetInnerHTML={{ __html: dataFilter.news_content }} />
+          <p dangerouslySetInnerHTML={{ __html: dataFilter.content }} />
         </div>
       </div>
     </>

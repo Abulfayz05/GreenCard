@@ -24,11 +24,7 @@ export default function Navbar() {
                 <a>Bosh sahifa</a>
               </Link>
             </li>
-            <li>
-              <Link href="/">
-                <a>Ma&apos;lumotlar</a>
-              </Link>
-            </li>
+        
             <li>
               <Link href="/news">
                 <a>Yangiliklar</a>
@@ -36,7 +32,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/partner">
-                <a>Hamkorlik</a>
+                <a>Vakansiya</a>
               </Link>
             </li>
             <li>
