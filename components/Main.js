@@ -9,7 +9,7 @@ export default function Main({ guide }) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Qo'llanma</h1>
+        <h1 className={styles.title}>Qo&apos;llanma</h1>
 
         <div className={styles.grid}>
           {guide
