@@ -11,7 +11,7 @@ export default function Navbar() {
               <img
                 className={styles.logo}
                 src="/logo.png"
-                alt="nimgap.uz"
+                alt="greenkarta.uz"
               ></img>{" "}
             </a>
           </Link>
