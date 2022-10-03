@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Main({ guide }) {
   const { locale } = useRouter();
-  console.log(guide);
+ 
   return (
     <div className={styles.container}>
       <main className={styles.main}>

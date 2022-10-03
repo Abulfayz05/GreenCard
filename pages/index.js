@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import { NextSeo } from "next-seo";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
@@ -8,14 +8,17 @@ import NewsCollection from "../components/NewsCollection";
 export default function Home({ data, guide }) {
   return (
     <div>
-      <NextSeo
-        title="Green Card DV2024 uchun anketalar qabul qilamiz"
-        description="Green Card ro'yxatdan o'tish 2024"
-        // titleTemplate={dataFilter.title}
-      />
+   
+  
+
       <Hero />
       <Main guide={guide.data} />
       <NewsCollection data={data.data} />
+      <NextSeo
+          title="Green Card DV2024 ro'yxatdan o'tishga yordam beramiz"
+          description="Green Card ro'yxatdan o'tish 2024"
+          // titleTemplate={dataFilter.title}
+        />
     </div>
   );
 }
