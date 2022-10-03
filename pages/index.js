@@ -8,17 +8,14 @@ import NewsCollection from "../components/NewsCollection";
 export default function Home({ data, guide }) {
   return (
     <div>
-   
-  
-
       <Hero />
       <Main guide={guide.data} />
       <NewsCollection data={data.data} />
       <NextSeo
-          title="Green Card DV2024 ro'yxatdan o'tishga yordam beramiz"
-          description="Green Card ro'yxatdan o'tish 2024"
-          // titleTemplate={dataFilter.title}
-        />
+        title="Green Card DV2024 ro'yxatdan o'tishga yordam beramiz"
+        description="Green Card ro'yxatdan o'tish 2024"
+        // titleTemplate={dataFilter.title}
+      />
     </div>
   );
 }
