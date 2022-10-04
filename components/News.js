@@ -7,21 +7,22 @@ import { NextSeo } from "next-seo";
 
 const News = ({ data }) => {
   const { locale } = useRouter();
-  const dataFilter = data.data.filter((p) => p.languages_code === locale)[0];
+  const dataFilter = data.data[0];
+  console.log(dataFilter)
   return (
     <>
       <NextSeo
         title={dataFilter.meta_name}
         description={dataFilter.content.split(" ", 20).join(" ")}
-        // titleTemplate={dataFilter.title}
+        titleTemplate={dataFilter.title}
       />
       <div className={styles.news}>
         <h3>{dataFilter.title}</h3>
 
         <p className={styles.date}>
-          {dataFilter.date.slice(0, 10) +
+          {dataFilter.date_created.slice(0, 10) +
             " " +
-            dataFilter.date.slice(11, 16)}
+            dataFilter.date_created.slice(11, 16)}
         </p>
 
         <div className={styles.image}>
@@ -35,7 +36,7 @@ const News = ({ data }) => {
         </div>
 
         <div className={styles.desc}>
-          <p dangerouslySetInnerHTML={{ __html: dataFilter.content }} />
+          <div dangerouslySetInnerHTML={{ __html: dataFilter.content }} />
         </div>
       </div>
     </>

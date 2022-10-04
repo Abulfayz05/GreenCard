@@ -7,7 +7,7 @@ export default function NewsIndex({data}) {
 }
 
 export async function getServerSideProps() {
-    const res2 = await fetch("https://admin.nimagap.uz/items/gcnews_translations");
+    const res2 = await fetch("https://admin.nimagap.uz/items/gcnews");
     const data = await res2.json();
    
     return {

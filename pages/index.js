@@ -21,10 +21,10 @@ export default function Home({ data, guide }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch("https://admin.nimagap.uz/items/gcnews_translations");
+  const res = await fetch("https://admin.nimagap.uz/items/gcnews");
   const data = await res.json();
   const res2 = await fetch(
-    "https://admin.nimagap.uz/items/gcguide_translations"
+    "https://admin.nimagap.uz/items/gcguide"
   );
   const guide = await res2.json();
 

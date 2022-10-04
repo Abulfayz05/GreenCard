@@ -20,9 +20,9 @@ export default function NewsCollection({ data }) {
       <div className={styles.section}>
         <div className={styles.grid}>
           {data
-            .filter((p) => p.languages_code === locale && p.gcnews_id)
-            .map(({ gcnews_id, image, title, content }) => (
-              <div key={gcnews_id} className={styles.card}>
+            
+            .map(({ id, image, title, content }) => (
+              <div key={id} className={styles.card}>
                 <div className={styles.image}>
                   <Image
                     src={getAssetURL(image)}
@@ -34,14 +34,14 @@ export default function NewsCollection({ data }) {
                 </div>
 
                 <div className={styles.item}>
-                  <Link href={`/news/${gcnews_id}`}>
+                  <Link href={`/news/${id}`}>
                     <a>{title}</a>
                   </Link>
-                  <p
+                  <div
                     dangerouslySetInnerHTML={{
                       __html: content.split(" ", 15).join(" "),
                     }}
-                  ></p>
+                  ></div>
                 </div>
               </div>
             ))}

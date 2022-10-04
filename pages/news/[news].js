@@ -13,7 +13,7 @@ export default NewsById;
 
 export async function getServerSideProps({ params }) {
   const res = await fetch(
-    `https://admin.nimagap.uz/items/gcnews_translations/?filter[gcnews_id]=${params.news}`
+    `https://admin.nimagap.uz/items/gcnews/?filter[id]=${params.news}`
   );
 
   const data = await res.json();

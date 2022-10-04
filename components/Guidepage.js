@@ -5,11 +5,11 @@ import { NextSeo } from "next-seo";
 
 const Guide = ({ data }) => {
   const { locale } = useRouter();
-  const dataFilter = data.data.filter((p) => p.languages_code === locale)[0];
+  const dataFilter = data.data[0];
   return (
     <>
       <NextSeo
-        title={dataFilter.title}
+        title={dataFilter.meta_name}
         description={dataFilter.content.split(" ", 20).join(" ")}
         // titleTemplate={dataFilter.title}
       />

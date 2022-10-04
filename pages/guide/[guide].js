@@ -15,7 +15,7 @@ export default GuideById;
 
 export async function getServerSideProps({ params }) {
   const res = await fetch(
-    `https://admin.nimagap.uz/items/gcguide_translations/?filter[gcguide_id]=${params.guide}`
+    `https://admin.nimagap.uz/items/gcguide/?filter[id]=${params.guide}`
   );
 
   const data = await res.json();
