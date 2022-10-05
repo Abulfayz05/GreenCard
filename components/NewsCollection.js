@@ -11,8 +11,8 @@ export default function NewsCollection({ data }) {
   return (
     <div className={styles.collection}>
       <NextSeo
-        title="Green Card 2024 Yangiliklar"
-        description="Green Card DV 2024 yangiliklari biz orqali kuzatib boring"
+        title="Green Card 2022-2024 Yangiliklar"
+        description="Green Card 2022 DV2024 yangiliklari biz orqali kuzatib boring"
         // titleTemplate={dataFilter.title}
       />
 
