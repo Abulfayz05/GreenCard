@@ -23,6 +23,11 @@
     width: 100%;
     position: relative;
   }
+
+  .image{
+    border-radius: 12px;
+    overflow: hidden;
+  }
   
   .item {
     padding-top: 15px;
@@ -48,6 +53,7 @@
   @media  (max-width: 850px) {
   .grid{
     grid-template-columns: 1fr;
+    grid-gap: 50px;
   }
   }
   @media  (max-width: 500px) {

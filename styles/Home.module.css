@@ -104,6 +104,11 @@
   .grid {
     width: 100%;
     flex-direction: column;
+   
+  }
+
+  .container{
+    margin-top: 250px;
   }
 
   .main h1{
