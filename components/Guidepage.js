@@ -17,6 +17,7 @@ const Guide = ({ data }) => {
       />
       <div className={styles.news}>
         <h3>{dataFilter.title}</h3>
+        <p></p>
         <div className={styles.image}>
           <Image
             src={getAssetURL(dataFilter.image)}

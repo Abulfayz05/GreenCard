@@ -24,6 +24,12 @@ export default function Navbar() {
                 <a>Bosh sahifa</a>
               </Link>
             </li>
+
+            <li>
+              <Link href="/guide">
+                <a>Qo&apos;llanma</a>
+              </Link>
+            </li>
         
             <li>
               <Link href="/news">

@@ -13,6 +13,7 @@ module.exports = {
     additionalSitemaps: [
     
       `${siteUrl}/server-sitemap.xml`,
+      `${siteUrl}/server-sitemap-guide.xml`,
     ],
   },
 };

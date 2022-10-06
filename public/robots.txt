@@ -8,3 +8,4 @@ Host: https://greenkarta.uz
 # Sitemaps
 Sitemap: https://greenkarta.uz/sitemap.xml
 Sitemap: https://greenkarta.uz/server-sitemap.xml
+Sitemap: https://greenkarta.uz/server-sitemap-guide.xml
