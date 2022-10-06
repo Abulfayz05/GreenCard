@@ -58,3 +58,18 @@
   
     }
   }
+
+  @media  (max-width: 500px) {
+    .herocontent h2{
+      font-size: 25px;
+      width: 100%;
+   
+  }
+  /* .herocontent h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    width: 600px;
+    margin: 0;
+} */
+  }

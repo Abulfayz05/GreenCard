@@ -44,4 +44,21 @@
     font-weight: 400;
     line-height: 1.6;
   }
+
+  @media  (max-width: 850px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  }
+  @media  (max-width: 500px) {
+    .collection {
+     margin-top: 10px;
+    }
+    
+    .collection h2{
+      text-align: center;
+      font-size: 35px;
+    }
+    }
+    
   

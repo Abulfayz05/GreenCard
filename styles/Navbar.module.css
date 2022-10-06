@@ -36,11 +36,28 @@
     font-weight: 500;
     padding: 30px 20px;
   }
+
+
   
   @media  (max-width: 1366px) {
     .container{
       padding: 0 43px;
   
+    }
+  }
+
+  @media (max-width: 670px){
+    .menu{
+      position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: hsla(0,0%,100%,.95);
+    width: 400px;
+    padding: 70px 0 30px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all .6s ease 0s;
     }
   }
   
