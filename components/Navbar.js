@@ -4,6 +4,9 @@ import styles from "../styles/Navbar.module.css";
 import { useState } from "react";
 import { VscMenu } from "react-icons/vsc";
 import { VscChromeClose } from "react-icons/vsc";
+import {FaTelegram} from 'react-icons/fa'
+
+
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
@@ -64,13 +67,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/partner">
+              <Link href="/">
                 <a>Vakansiya</a>
               </Link>
             </li>
             <li>
-              <Link href="/contact">
-                <a>Aloqa</a>
+              <Link href="https://t.me/greenkarta_uz_bot">
+                <a>@greenkarta_uz_bot</a>
               </Link>
             </li>
           </ul>
