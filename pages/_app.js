@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import Gtag from "../components/gtag";
+import Ads from "../components/ads";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="yandex-verification" content="55114251dfe82623" />
         <link rel="icon" href="/logo.png" />
       </Head>
+      <Ads />
       <Gtag />
       <Component {...pageProps} />
     </Layout>
