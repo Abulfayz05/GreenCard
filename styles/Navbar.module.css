@@ -77,16 +77,7 @@
 
   @media (max-width: 670px){
     .menu{
-      position: absolute;
-    right: 0;
-    top: 0px;
-    flex-direction: column;
-    background-color: hsla(0,0%,100%,.95);
-    width: 400px;
-    padding: 70px 0 30px;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: all .5s ease 0s;
+ display: none;
     }
   
     .menu_active{

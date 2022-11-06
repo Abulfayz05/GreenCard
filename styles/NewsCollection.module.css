@@ -21,7 +21,8 @@
   
   .card {
     width: 100%;
-    position: relative;
+    /* position: relative; */
+    box-shadow: 0 10px 15px rgb(0 9 94 / 6%);
   }
 
   .image{
